@@ -60,6 +60,12 @@ PATH
       thin
 
 PATH
+  remote: vendor/gems/proper_discourse
+  specs:
+    proper_discourse (0.0.1)
+      bomberman (~> 0.5.1)
+
+PATH
   remote: vendor/gems/rails_multisite
   specs:
     rails_multisite (0.0.1)
@@ -120,6 +126,9 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.1)
       debug_inspector (>= 0.0.1)
+    bomberman (0.5.1)
+      faraday (~> 0.8.5)
+      json (>= 1.7.7)
     bourne (1.1.2)
       mocha (= 0.10.5)
     builder (3.0.4)
@@ -508,6 +517,7 @@ DEPENDENCIES
   openid-redis-store
   pbkdf2
   pg
+  proper_discourse!
   pry-rails
   rack-mini-profiler!
   rails
